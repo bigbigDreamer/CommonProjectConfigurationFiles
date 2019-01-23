@@ -2,8 +2,7 @@
 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles)
 [![](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg)](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles)
-[![](https://img.shields.io/github/languages/top/badges/shields.svg)](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles)
-[![](https://img.shields.io/badge/npm-v6.5-green.svg)](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles)
+[![](https://img.shields.io/badge/npm-v6.6-green.svg)](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles)
 [![](https://img.shields.io/badge/LICENSE-MIT-green.svg)](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles/blob/master/LICENSE)
 
 # ConfigBox
