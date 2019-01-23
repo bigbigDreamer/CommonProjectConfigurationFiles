@@ -1,0 +1,3 @@
+*.html linguist-language = YourProjectLanguage
+*.css linguist-language = YourProjectLanguage
+*.js linguist-language = YourProjectLanguage
