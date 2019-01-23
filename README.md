@@ -70,6 +70,7 @@
 - 第二步：安装依赖
 ```bash
 npm install --save-dev @babel/core @babel/cli @babel/preset-env
+
 npm install --save @babel/polyfill
 ```
 - 第三步：创建配置文件
@@ -90,12 +91,19 @@ npm install --save @babel/polyfill
 
 ```bash
 npm install -g eslint
+
 npm install -g eslint-config-standard
+
 npm install -g eslint-plugin-html
+
 npm install -g eslint-plugin-promise
+
 npm install -g eslint-plugin-standard
+
 npm install -g eslint-plugin-sort-class-members
+
 npm install -g babel-eslint
+
 npm install -g eslint-plugin-babel
 ```
 - 第二步：在项目根目录创建配置文件
