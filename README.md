@@ -131,7 +131,7 @@ npm install -g less
 
 ![alt](configExampleImgs/less2.png)
 
-## Hexo搭建个个人博客
+## Hexo搭建个人博客
 
 - 参见[教程](https://ivu1314.club/9c29.html)
 - [Hexo官网](https://hexo.io/zh-cn/docs/helpers.html#%E7%BD%91%E5%9D%80)
