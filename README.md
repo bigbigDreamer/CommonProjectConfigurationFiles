@@ -5,6 +5,18 @@
 [![](https://img.shields.io/badge/npm-v6.6-green.svg)](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles)
 [![](https://img.shields.io/badge/LICENSE-MIT-green.svg)](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles/blob/master/LICENSE)
 
+# Introduce
+
+## Self-introduction
+
+*Hi, everybody, my name is BillWang, I am a college student from China, currently at lanzhou university of technology, grade three.*
+
+## 
+
+***`CN`这个仓库主要讲解了前端项目常用的一些文件配置以及使用教学，包括一个标准前端工程师的必备软技能，如果你有兴趣，欢迎PR。***
+
+***`EN`This repository mainly explains some common file configuration and usage teaching of front-end projects, including the necessary soft skills of a standard front-end engineer. If you are interested, welcome PR. If you have any questions, please feel free to contact me. My personal contact information is at the bottom of the document.***
+
 # ConfigBox
 
 ## `.gitattributes`
