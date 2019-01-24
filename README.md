@@ -165,6 +165,10 @@ npm install -g less
 
 - 参见[API](http://yuri4ever.github.io/jsdoc/)
 
+## 10个插件带你玩转Chrome
+
+- 参见[BillWang](https://github.com/bigbigDreamer/BillWang/blob/master/blogs&&tools/10%E4%B8%AA%E6%8F%92%E4%BB%B6%E7%8E%A9%E8%BD%ACchrome.md)
+
 -----------------------------------------------------------------------------
 
 # Statement
