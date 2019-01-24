@@ -131,6 +131,28 @@ npm install -g less
 
 ![alt](configExampleImgs/less2.png)
 
+## Hexo搭建个个人博客
+
+- 参见[教程](https://ivu1314.club/9c29.html)
+- [Hexo官网](https://hexo.io/zh-cn/docs/helpers.html#%E7%BD%91%E5%9D%80)
+
+## 前端API编写工具之GitBook
+
+- 参见[教程](https://yuzeshan.gitbooks.io/gitbook-studying/content/index.html)
+- [GitBook官网](https://www.gitbook.com/?t=5)
+
+## GitHub徽章定制
+
+- 参见[官网](https://shields.io/#/)
+
+## 前端工程师的调色板
+
+- 参见[官网](https://colorhunt.co/)
+
+## JavaScript注释标准指导
+
+- 参见[API](http://yuri4ever.github.io/jsdoc/)
+
 -----------------------------------------------------------------------------
 
 # Statement
