@@ -169,6 +169,10 @@ npm install -g less
 
 - 参见[BillWang](https://github.com/bigbigDreamer/BillWang/blob/master/blogs&&tools/10%E4%B8%AA%E6%8F%92%E4%BB%B6%E7%8E%A9%E8%BD%ACchrome.md)
 
+## 前端程序员需要掌握的英语单词
+
+- 参见[笔记本](Note/IT前端常用词汇.docx)[在前辈总结的基础上，持续增加]
+
 -----------------------------------------------------------------------------
 
 # 好书推荐
