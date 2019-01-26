@@ -177,8 +177,6 @@ npm install -g less
 
 
 
-
-
 -----------------------------------------------------------------------------------------
 # Statement
 
@@ -189,6 +187,8 @@ Email:vuejs@vip.qq.com
 QQ:1826001146
 
 WeChat:17693104287
+
+MyBlog:https://ivu1314.club
 
 ## License
 
