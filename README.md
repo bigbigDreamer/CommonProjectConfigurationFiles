@@ -193,6 +193,8 @@ jsdoc demo.js
 
 ## :closed_book:[CSS揭秘](EBook/CSS揭秘.pdf)
 
+## :closed_book:[精通CSS](EBook/[W3Cfuns]精通CSS：高级Web标准解决方案(第2版).pdf)
+
 
 
 -----------------------------------------------------------------------------------------
