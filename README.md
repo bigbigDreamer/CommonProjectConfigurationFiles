@@ -171,7 +171,8 @@ npm install -g less
 
 ## :revolving_hearts:前端程序员需要掌握的英语单词
 
-- 参见[笔记本](Note/IT前端常用词汇.docx)[在前辈总结的基础上，持续增加]
+- 参见[笔记本](Note/IT前端常用词汇.docx)[在前辈总结的基础上，持续增加中......]
+- [MyNote](Note/VocabularyBook.md)[我的单词本，持续更新中......]
 
 ## :revolving_hearts:使用JSDoc自动生成代码文档
 
