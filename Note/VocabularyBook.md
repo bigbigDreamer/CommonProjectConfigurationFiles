@@ -30,5 +30,16 @@
 - profile - 配置文件
 - config - 配置
 
+## :watch:DAY2
+
+- concept - 概念
+- bundle - 捆绑
+- process - 处理
+- incredibly - 令人难以置信的
+- intend to do sth - 打算做某事
+- consult - 咨询
+- core - 核心
+- indicate - 表示
+- property - 属性
 
 
