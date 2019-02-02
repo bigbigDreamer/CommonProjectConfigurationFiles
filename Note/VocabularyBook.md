@@ -43,3 +43,25 @@
 - property - 属性
 
 
+## :watch:DAY3
+
+- uppercase 大写字母
+- fixed 固定的
+- precision 精度
+- machine epsilon 机器精度
+- attached 附加
+- debugger 调试器
+- assert 断言
+- lowercase 小写字母
+- copyright 版权
+- external 外部
+- evenly 均匀的
+- scratches  划痕
+- console 控制台
+- babel 巴别塔
+- fun 玩笑
+- microsoft 微软
+- module 模块
+- navigate 导航
+- refactor 重构
+- stash 藏
