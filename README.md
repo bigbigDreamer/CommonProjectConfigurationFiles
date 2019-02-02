@@ -9,7 +9,7 @@
 
 ## :page_with_curl:Self-introduction
 
-*Hi, everybody, my name is BillWang, I am a college student from China, currently at lanzhou university of technology, grade three.*
+*Hi, everybody, my name is EricWang, I am a college student from China, currently at lanzhou university of technology, grade three.*
 
 ## :page_with_curl:Project-introduction
 
