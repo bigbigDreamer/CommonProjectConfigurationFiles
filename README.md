@@ -129,7 +129,7 @@ npm install -g eslint-plugin-babel
 -----------------------------------------------------------------------
 
 # :muscle:IDE软技能
-
+为
 ## :revolving_hearts:less在WebStorm中如何配置
 
 - 第一步：安装
@@ -188,6 +188,10 @@ npm install -g jsdoc
 ```bash
 jsdoc demo.js
 ```
+
+## :revolving_hearts:自撰的网站色彩指导[持续更新中......]
+
+- 参见[说明书](Note/StandardWebsiteColorGuide.md)
 -----------------------------------------------------------------------------
 
 # :books:好书推荐
