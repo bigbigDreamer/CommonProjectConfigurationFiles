@@ -167,5 +167,35 @@ console.log('custome');
 ev.dispatchEvent(eve)
 ```
 
+- DEMO
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        const eve = new Event('warning');
+        console.log(eve);
+
+    </script>
+</head>
+<body>
+
+<button class="test">测试自定义事件</button>
+
+<script>
+    document.querySelector('.test').addEventListener('warning',function () {
+         alert('你好，我是自定义事件warning!');
+    });
+    document.querySelector('.test').dispatchEvent(eve);
+</script>
+
+</body>
+</html>
+```
+
 
 

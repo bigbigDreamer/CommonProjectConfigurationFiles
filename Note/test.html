@@ -3,48 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .layout {
-            width: 100%;
-        }
-        .layout .box1{
-            width: 33.3%;
-            height: 300px;
-            background-color: rosybrown;
-            position: absolute;
-            left: 0;
-        }
-        .layout .box2{
-            width: 33.3%;
-            height: 300px;
-            background-color: brown;
-            position: absolute;
-            right: 0;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            margin: 0 auto;
-        }
-        .layout .box3{
-            width: 33.3%;
-            height: 300px;
-            background-color: aquamarine;
-            position: absolute;
-            right: 0;
-        }
-    </style>
+
+    <script>
+        const eve = new Event('warning');
+        console.log(eve);
+
+    </script>
 </head>
 <body>
 
-<section class="relative layout">
-    <div class="box1"></div>
-    <div class="box2">相对定位自适应</div>
-    <div class="box3"></div>
-</section>
+<button class="test">测试自定义事件</button>
+
+<script>
+    document.querySelector('.test').addEventListener('warning',function () {
+         alert('你好，我是自定义事件warning!');
+    });
+    document.querySelector('.test').dispatchEvent(eve);
+</script>
 
 </body>
 </html>
