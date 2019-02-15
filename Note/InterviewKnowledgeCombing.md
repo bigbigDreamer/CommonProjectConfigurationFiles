@@ -469,9 +469,58 @@ console.log(obj1 instanceOf Object)
                 Child.prototype = Object.create(Parent.prototype);
 
                 Child.prototype.constructor = Child;
-                
+
   ```
 
+## :pencil:通信类
+
+#### :memo:什么是同源策略及限制
+
+- 同源策略是从一个源加载的文档或脚本如何来自另一个源的资源进行交互。
+- 这是一个用于隔离潜在恶意文件的关键的安全机制。
+
+>什么是源？
+
+包含三部分：协议、域名、端口。三者有一不一样就算跨域。
+
+>什么是限制？
+
+不是一个源的文档，你没有权利去操作另一个源。
+
+- Cookie、LocalStorage和IndexDB无法读取
+- DOM无法获取
+- AJAX请求不能发送
+
+#### :memo:前后端如何通信
+
+- Ajax（一般只适合同源通信）
+- WebSocket（不受同源策略限制）
+- CORS （支持跨域通信也支持同源通信）
+
+#### :memo:如何创建ajax
+
+- XMLHttpRequest对象的工作流程
+- 兼容性处理
+- 事件的触发条件
+- 事件的触发顺序
+
+```javascript
+const XHR = XMLHttpRequest ? new XMLHttpRequest() : new Window.ActiveXObject('Microsoft');
+
+XHR.open("get", "yourFile.txt", true);
+XHR.send();
+
+```
+
+#### :memo:跨域通信的几种方式
+
+- JSONP
+  - 原理
+  - 实现
+- Hash（Hash改变页面不会刷新）
+- postMessage（H5新增）
+- WebSocket
+- CORS（可以理解为支持跨域通信的Ajax）
 
 
 
