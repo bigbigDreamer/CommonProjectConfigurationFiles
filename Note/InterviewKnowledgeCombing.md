@@ -285,5 +285,61 @@ ev.dispatchEvent(eve)
 - HTTP/1.1要求服务器端支持管线化，但是并不要求服务器端也对响应进行管线化处理，只是要求对于管线化的请求不失败即可
 - 由于上面提到的服务器端问题，开启管线化很可能并不会带来大幅度的性能提升，而且很多服务器端和代理程序对于管线化的支持并不好，因此现代浏览器如chrome和firefox默认并未开启管线化支持
 
+## :pencil:原型链
+
+#### :memo:创建对象有几种方法
+
+```javascript
+const obj = {name:'张三'};
+
+const obj1 = new Object({name:'张三'});
+```
+
+```javascript
+const obj = function (name){
+this.name = name
+}
+
+const obj1 = new obj('张三');
+```
+
+```javascript
+const obj = {name:'张三'}
+
+const obj1 = Object.create(obj);
+```
+#### :memo:原型、构造函数、实例、原型链
+
+![alt](configExampleImgs/prototype.png)
+
+
+#### :memo:instanceof的原理
+
+![alt](configExampleImgs/instanceof.png)
+
+- instanceOf的原理就是判断实例对象的`__proto__`属性和构造函数的`prototype`是不是同一个引用。
+
+
+>Demo
+
+```javascript
+const obj = function (name){
+this.name = name
+}
+
+const obj1 = new obj('张三');
+
+console.log(obj1 instanceOf obj)
+console.log(obj1 instanceOf Object)
+```
+#### :memo:new运算符
+
+- 步骤一：一个新对象被创建，它继承自foo.prototype
+- 步骤二：构造函数foo被执行，执行的时候，相应的参数会被传入，同时执行上下文(this)会被指定为这个新实例。new foo等同于new foo(),
+只能用在不传递任何参数的情况下。
+- 步骤三：如果构造函数返回了一个“对象”，那么这个对象又会取代整个new出来的结果。如果构造函数没有返回对象，那么new出来的结果为步骤一创建的对象。
+
+
+
 
 
