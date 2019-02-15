@@ -307,6 +307,8 @@ const obj1 = new obj('张三');
 const obj = {name:'张三'}
 
 const obj1 = Object.create(obj);
+
+//
 ```
 #### :memo:原型、构造函数、实例、原型链
 
@@ -338,6 +340,136 @@ console.log(obj1 instanceOf Object)
 - 步骤二：构造函数foo被执行，执行的时候，相应的参数会被传入，同时执行上下文(this)会被指定为这个新实例。new foo等同于new foo(),
 只能用在不传递任何参数的情况下。
 - 步骤三：如果构造函数返回了一个“对象”，那么这个对象又会取代整个new出来的结果。如果构造函数没有返回对象，那么new出来的结果为步骤一创建的对象。
+
+## :pencil:面向对象
+
+#### :memo:类与实例
+
+- 类的声明
+
+```javascript
+/**
+ * 传统类的声明
+ */
+
+ function Animal(name) {
+  this.name = name;
+ }
+
+```
+
+```javascript
+ /**
+  * ES6中类的声明
+  */
+
+  class Animal {
+
+    constructor(name){
+       this.name = name;
+    }
+
+    // other methods
+  }
+```
+
+- 生成实例
+
+```javascript
+
+ /**
+  * 实例化一个类
+  */
+
+  new Animal('鸽子');
+```
+#### :memo:类与继承
+
+- 如何实现继承
+
+  - 继承的本质就是原型链
+
+- 继承的几种方式
+
+  - 构造函数实现继承
+  ```javascript
+    function Parent(name){
+      this.name = name;
+    }
+
+    function Child(){
+      //父类挂载在子类
+      Parent.call(this);
+      // Parent.apply(this);
+    }
+
+    //缺点
+    //Parent原型链上的内容并没有被Child继承
+  ```
+  - 原型链实现继承
+
+  ```javascript
+      function Parent(name){
+         this.name = name;
+       }
+
+       function Child(){
+
+       }
+
+       Child.prototype = new Parent('鸽子');
+
+       //缺点
+       //不同的实例对象共享属性
+  ```
+  - 组合方式
+
+  ```javascript
+         function Parent(name){
+           this.name = name;
+         }
+
+         function Child(){
+          Parent.call(this);
+         }
+
+        Child.prototype = new Parent();
+
+        //缺点
+        //父级的构造函数执行了两次(完全没必要)
+
+
+        -------------------------------------------------
+
+        // 优化组合继承1
+        function Parent(name){
+           this.name = name;
+         }
+
+         function Child(){
+          Parent.call(this);
+         }
+
+        Child.prototype = Parent.prototype;
+
+        //缺点
+        //无法区分一个对象是谁实例化的
+
+        --------------------------------------------------------------
+
+         // 优化组合继承2
+                function Parent(name){
+                   this.name = name;
+                 }
+
+                 function Child(){
+                  Parent.call(this);
+                 }
+
+                Child.prototype = Object.create(Parent.prototype);
+
+                Child.prototype.constructor = Child;
+  ```
 
 
 
