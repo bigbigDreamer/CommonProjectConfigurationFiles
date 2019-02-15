@@ -469,6 +469,7 @@ console.log(obj1 instanceOf Object)
                 Child.prototype = Object.create(Parent.prototype);
 
                 Child.prototype.constructor = Child;
+                
   ```
 
 
