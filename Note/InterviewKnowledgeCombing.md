@@ -310,12 +310,12 @@ const obj1 = Object.create(obj);
 ```
 #### :memo:原型、构造函数、实例、原型链
 
-![alt](configExampleImgs/prototype.png)
+![alt](../configExampleImgs/prototype.png)
 
 
 #### :memo:instanceof的原理
 
-![alt](configExampleImgs/instanceof.png)
+![alt](../configExampleImgs/instanceof.png)
 
 - instanceOf的原理就是判断实例对象的`__proto__`属性和构造函数的`prototype`是不是同一个引用。
 
