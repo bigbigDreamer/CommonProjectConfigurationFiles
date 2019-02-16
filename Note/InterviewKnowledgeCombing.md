@@ -567,7 +567,8 @@ XHR.send();
   - 基本概念和缩写
     - CSRF通常称为跨站请求伪造，英文名Cross-site request forgery缩写CSRF。
   - 攻击原理
-    ![ALT](configExampleImgs/CSRF.png)
+
+    ![ALT](../configExampleImgs/CSRF.png)
     - 网站某一个接口存在漏洞
     - 用户确实登录过
   - 防御措施
