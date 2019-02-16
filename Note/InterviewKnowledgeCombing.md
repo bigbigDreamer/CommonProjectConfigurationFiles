@@ -516,11 +516,73 @@ XHR.send();
 
 - JSONP
   - 原理
+    - 主要原理就是利用`script`标签异步加载的原理工作的。
   - 实现
+  ```javascript
+  function handleCallback(result) {
+      console.log(result.message);
+  }
+
+  const jsonp = document.createElement('script');
+  const element = document.getElementById('demo');
+  jsonp.type = 'text/javascript';
+  jsonp.src = 'http://localhost:8080?callback=handleCallback';
+  element.appendChild(jsonp);
+  element.removeChild(jsonp);
+  ```
+  - JSONP只支持get请求
+  - JSONP有一个弊端就是需要服务器的配合，也就是服务器如果传输一段恶意代码，浏览器也会毅然决然的执行。
 - Hash（Hash改变页面不会刷新）
+  - 场景：利用hash，场景是当前页面A通过iframe嵌入了跨域的页面B
+  - 实现
+    ```javascript
+    const B = document.getElementByTagName('iframe');
+    B.src = B.src + '#' + 'data';
+
+    window.onhashchange = function () {
+       var data = window.location.hash;
+    };
+
+    ```
 - postMessage（H5新增）
 - WebSocket
 - CORS（可以理解为支持跨域通信的Ajax）
+
+  - 实现
+  ```javascript
+  fetch('http://example.com/movies.json')
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(myJson) {
+      console.log(myJson);
+    });
+  ```
+  - 原理 ：浏览器会拦截ajax请求，如果ajax是跨域的。它会加一个origin。
+
+## :pencil:安全类
+
+#### :memo: CSRF
+
+  - 基本概念和缩写
+    - CSRF通常称为跨站请求伪造，英文名Cross-site request forgery缩写CSRF。
+  - 攻击原理
+    ![ALT](configExampleImgs/CSRF.png)
+    - 网站某一个接口存在漏洞
+    - 用户确实登录过
+  - 防御措施
+    - Token验证（访问API附带Token）
+    - Referer验证（页面来源）
+    - 隐藏令牌（隐藏在Http Header头中）
+
+#### :memo: XSS
+
+ - 基本概念以及缩写
+
+ - 原理
+   - 向页面内部注入JS
+
+## :pencil:算法类
 
 
 
