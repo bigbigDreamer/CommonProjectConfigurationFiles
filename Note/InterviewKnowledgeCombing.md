@@ -734,5 +734,41 @@ for(var i = 0;i<4;i++) {
 
 ## :pencil:页面性能
 
+#### :memo:提升页面性能的方法有哪些？
+
+- 资源压缩合并，减少Http请求
+- 非核心代码异步加载`——>`异步加载的方式`——>`异步加载的区别
+  - 异步加载的方式
+  ```bash
+   #(1)动态脚本的加载（也就是利用JS动态创建script标签加载）
+   #(2)defer
+   #(3)async
+  ```
+  - 异步加载的区别
+  ```bash
+  #(1)defer是在HTML解析完成之后才会执行，如果是多个，按照加载顺序依次执行
+  #(2)async是在加载完之后立即执行，如果是多个执行顺序和加载顺序无关
+  ```
+- 利用浏览器缓存`——>`缓存的分类`——>`缓存的原理
+  - 缓存的分类
+
+  `(1)强缓存`
+  ```bash
+    Expires  Expires:Thu,21 Jan 2017 23:39:02 GMT（服务器的绝对时间）
+    Cache-Control Cache-Control:max-age = 3600（浏览器的相对时间）
+  ```
+
+  `(2)协商缓存`(与服务器协商一番)
+  ```bash
+    Last-Modified If-Modified-Since  Last-Modified:Wed,26 Jan 2017 00:35:11 GMT
+    Etag If-None-Match
+  ```
+- 使用CDN
+- 预解析DNS
+```
+<meta http-equiv = "x-dns-prefetch-control" content = "on">(强制打开a标签的DNS预解析)
+<link rel = "dns-prefetch" href = "//host_name_to_prefetch.com">
+```
+
 ## :pencil:错误监控
 
