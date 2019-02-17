@@ -656,6 +656,82 @@ XHR.send();
 
 ## :pencil:JS运行机制
 
+#### :memo:Demo引出
+
+```javascript
+console.log(1);
+
+setTimeout(() =>{
+   console.log(2);
+},0);
+
+console.log(3);
+
+------------------------------
+//print code
+
+1
+
+3
+
+2
+
+```
+
+- 同步任务持续执行
+- 异步任务会挂起
+- JS运行机制，单线程优先执行同步任务
+
+```javascript
+ console.log('A');
+
+ while(true) {
+
+ }
+ console.log('B');
+
+ ------------------------------
+ //print code
+
+ A
+```
+
+- 此处是进入同步无限循环，永远也进入不到B
+
+```javascript
+
+for(var i = 0;i<4;i++) {
+ setTimeout(()=>{
+   console.log(i);
+ },1000)
+}
+
+--------------------------------
+//print code
+
+4
+4
+4
+4
+```
+
+- 异步任务的放入时间和执行时间
+- 当时间到了之后，会把setTimeout扔进异步队列中
+
+#### :memo:异步任务
+
+- setTimeout和setInterval
+- DOM事件
+- ES6中的Promise
+
+#### :memo:总结
+
+- 理解JS的单线程的概念
+- 理解任务队列
+- 理解Event Loop
+- 理解哪些语句会放入异步任务队列
+- 理解语句放入异步任务队列的时机
+
 ## :pencil:页面性能
 
 ## :pencil:错误监控
