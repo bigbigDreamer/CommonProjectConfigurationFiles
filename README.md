@@ -221,7 +221,7 @@ MyBlog:https://ivu1314.club
 
 ## :mega:赏我一杯咖啡吧~~~
 
-![alt](configExampleImgs/wexin.jpg)
+![alt](configExampleImgs/weixin.jpg)
 
 # License
 
