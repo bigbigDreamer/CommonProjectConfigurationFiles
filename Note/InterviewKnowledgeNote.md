@@ -1,8 +1,8 @@
 # :bookmark_tabs:前端工程师面试所具备的知识梳理
 
------------------------------------------
+*****
 
-# *目录*
+### *目录*
 
 > [一面/二面](#一面二面)
 
@@ -24,14 +24,14 @@
 - [页面性能](#页面性能)
 - [错误监控](#错误监控)
 
------------------------------------------
+****
 
-## :cyclone:一面/二面
+### :cyclone:一面/二面
 
 -------------------------------------------------------------------------
-## :pencil:网页布局
+### :pencil:网页布局
 
-#### :memo:相对定位布局实现自适应
+###### :memo:相对定位布局实现自适应
 
 ```html
 <!DOCTYPE html>
@@ -75,7 +75,7 @@
 </html>
 ```
 
-#### :memo:绝对定位布局自适应
+###### :memo:绝对定位布局自适应
 
 ```html
 <!DOCTYPE html>
@@ -129,13 +129,13 @@
 </body>
 </html>
 ```
-## :pencil:BFC
+### :pencil:BFC
 
-#### :memo:概念
+###### :memo:概念
 
 块格式化上下文（Block Formatting Context，BFC） 是Web页面的可视化CSS渲染的一部分，是布局过程中生成块级盒子的区域，也是浮动元素与其他元素的交互限定区域。
 
-#### :memo:下列方式会创建块格式化上下文：
+###### :memo:下列方式会创建块格式化上下文：
 
 - 根元素或包含根元素的元素
 - 浮动元素（元素的 float 不是 none）
@@ -155,28 +155,28 @@
 
 ***BFC子元素即使是float也会参与父元素的高度计算***
 
-## :pencil:DOM事件
+### :pencil:DOM事件
 
-#### :memo:DOM事件的级别
+###### :memo:DOM事件的级别
 
 - DOM0   `element.onclick = function(){}`
 - DOM2   `element.addEventListener('click',function(){},false)`
 - DOM3   `element.addEventListener('keyup',function(){},false)` 新增诸多鼠标键盘事件
-#### :memo:DOM事件模型
+###### :memo:DOM事件模型
 
 - 自上而下捕获，自下而上冒泡
 
-#### :memo:DOM事件流
+###### :memo:DOM事件流
 
 - 第一阶段  捕获
 - 第二阶段  目标阶段  (到达目标元素)
 - 第三阶段  冒泡阶段  (从目标元素冒泡到window对象)
 
-#### :memo:描述DOM事件捕获的具体流程
+###### :memo:描述DOM事件捕获的具体流程
 
 - window `-->` document `-->` html  `-->` body `-->` 父级元素 `-->` 目标元素
 
-#### :memo:EVENT对象的常见应用
+###### :memo:EVENT对象的常见应用
 
 - event.preventDefault() 阻止默认事件
 - event.stopPropagation() 阻止冒泡事件
@@ -184,7 +184,7 @@
 - event.currentTarget  当前绑定事件的对象
 - event.target  应用于事件委托
 
-#### :memo:自定义事件
+###### :memo:自定义事件
 
 ```javascript
 var eve = new Event('custome');
@@ -226,16 +226,16 @@ ev.dispatchEvent(eve)
 </html>
 ```
 
-## :pencil:HTTP协议
+### :pencil:HTTP协议
 
-#### :memo:HTTP协议的主要特点
+###### :memo:HTTP协议的主要特点
 
 - 简单快速(URI固定)
 - 灵活()
 - 无连接(连接一次就会断掉不会保持连接)
 - 无状态(客户端与服务端是两种身份)
 
-#### :memo:HTTP报文的组成部分
+###### :memo:HTTP报文的组成部分
 
 - 请求报文
   - 请求行(HTTP方法，链接地址，http协议以及版本)
@@ -249,7 +249,7 @@ ev.dispatchEvent(eve)
   - 响应体
 
 
-#### :memo:HTTP方法
+###### :memo:HTTP方法
 
 - get ----->获取资源
 - post ----->传输资源
@@ -257,7 +257,7 @@ ev.dispatchEvent(eve)
 - delete ---->删除资源
 - head ---->获得报文收首部
 
-#### :memo:Post与Get的区别
+###### :memo:Post与Get的区别
 
 - GET在浏览器回退是无害的，而POST会再次提交请求。
 - GET产生的URL地址可以被收藏，而POST不可以。
@@ -269,7 +269,7 @@ ev.dispatchEvent(eve)
 - GET比POST更不安全，因为GET参数会暴露在URL中，所以不能用来传递敏感信息。
 - GET参数通过URL传递，POST放在Request body中。
 
-#### :memo:HTTP状态码
+###### :memo:HTTP状态码
 
 - 1xx：指示信息-表示请求已经接收，继续处理
 - 2xx：成功-表示请求已经被接收
@@ -286,12 +286,12 @@ ev.dispatchEvent(eve)
 - 302  Found：所请求的页面已经临时转移至新的url
 - 304  Not Modified：客户端有缓冲的文档并发出了一个条件请求，服务器告诉客户端，原来缓冲的文档还可以继续使用
 
-#### :memo:什么是持久连接
+###### :memo:什么是持久连接
 
 - HTTP协议采用“请求-应答”模式，当使用普通模式，即非Keep-Alive模式时，每个请求/应答客户和服务器都要创建一个连接，完成之后立即断开连接(HTTP协议为无连接的协议)
 - 当使用Keep-Alive模式（又称持久连接，连接重用）时，Keep-Alive功能使得客户端到服务器端的连接持续有效，当出现对服务器的后继请求时，Keep-Alive功能避免了建立或者重新建立连接
 
-#### :memo:什么是管线化
+###### :memo:什么是管线化
 
 - 在使用持久连接的情况下，某个连接上的消息的传递类似于
 
@@ -314,9 +314,9 @@ ev.dispatchEvent(eve)
 - HTTP/1.1要求服务器端支持管线化，但是并不要求服务器端也对响应进行管线化处理，只是要求对于管线化的请求不失败即可
 - 由于上面提到的服务器端问题，开启管线化很可能并不会带来大幅度的性能提升，而且很多服务器端和代理程序对于管线化的支持并不好，因此现代浏览器如chrome和firefox默认并未开启管线化支持
 
-## :pencil:原型链
+### :pencil:原型链
 
-#### :memo:创建对象有几种方法
+###### :memo:创建对象有几种方法
 
 ```javascript
 const obj = {name:'张三'};
@@ -339,12 +339,12 @@ const obj1 = Object.create(obj);
 
 //
 ```
-#### :memo:原型、构造函数、实例、原型链
+###### :memo:原型、构造函数、实例、原型链
 
 ![alt](../configExampleImgs/prototype.png)
 
 
-#### :memo:instanceof的原理
+###### :memo:instanceof的原理
 
 ![alt](../configExampleImgs/instanceof.png)
 
@@ -363,16 +363,16 @@ const obj1 = new obj('张三');
 console.log(obj1 instanceof obj)
 console.log(obj1 instanceof Object)
 ```
-#### :memo:new运算符
+###### :memo:new运算符
 
 - 步骤一：一个新对象被创建，它继承自foo.prototype
 - 步骤二：构造函数foo被执行，执行的时候，相应的参数会被传入，同时执行上下文(this)会被指定为这个新实例。new foo等同于new foo(),
 只能用在不传递任何参数的情况下。
 - 步骤三：如果构造函数返回了一个“对象”，那么这个对象又会取代整个new出来的结果。如果构造函数没有返回对象，那么new出来的结果为步骤一创建的对象。
 
-## :pencil:面向对象
+### :pencil:面向对象
 
-#### :memo:类与实例
+###### :memo:类与实例
 
 - 类的声明
 
@@ -412,7 +412,7 @@ console.log(obj1 instanceof Object)
 
   new Animal('鸽子');
 ```
-#### :memo:类与继承
+###### :memo:类与继承
 
 - 如何实现继承
 
@@ -501,9 +501,9 @@ console.log(obj1 instanceof Object)
 
   ```
 
-## :pencil:通信类
+### :pencil:通信类
 
-#### :memo:什么是同源策略及限制
+###### :memo:什么是同源策略及限制
 
 - 同源策略是从一个源加载的文档或脚本如何来自另一个源的资源进行交互。
 - 这是一个用于隔离潜在恶意文件的关键的安全机制。
@@ -520,13 +520,13 @@ console.log(obj1 instanceof Object)
 - DOM无法获取
 - AJAX请求不能发送
 
-#### :memo:前后端如何通信
+###### :memo:前后端如何通信
 
 - Ajax（一般只适合同源通信）
 - WebSocket（不受同源策略限制）
 - CORS （支持跨域通信也支持同源通信）
 
-#### :memo:如何创建ajax
+###### :memo:如何创建ajax
 
 - XMLHttpRequest对象的工作流程
 - 兼容性处理
@@ -541,7 +541,7 @@ XHR.send();
 
 ```
 
-#### :memo:跨域通信的几种方式
+###### :memo:跨域通信的几种方式
 
 - JSONP
   - 原理
@@ -589,9 +589,9 @@ XHR.send();
   ```
   - 原理 ：浏览器会拦截ajax请求，如果ajax是跨域的。它会加一个origin。
 
-## :pencil:安全类
+### :pencil:安全类
 
-#### :memo: CSRF
+###### :memo: CSRF
 
   - 基本概念和缩写
     - CSRF通常称为跨站请求伪造，英文名Cross-site request forgery缩写CSRF。
@@ -605,14 +605,14 @@ XHR.send();
     - Referer验证（页面来源）
     - 隐藏令牌（隐藏在Http Header头中）
 
-#### :memo: XSS
+###### :memo: XSS
 
  - 基本概念以及缩写
 
  - 原理
    - 向页面内部注入JS
 
-## :pencil:算法类
+### :pencil:算法类
 
 - 排序
 
@@ -627,11 +627,11 @@ XHR.send();
 
 - 波兰式和逆波兰式
 
-## :cyclone:二面/三面
+### :cyclone:二面/三面
 
 -------------------------------------------------------------------------
 
-## :pencil:面试技巧
+### :pencil:面试技巧
 
 - 知识面要广
 - 理解要深刻
@@ -640,9 +640,9 @@ XHR.send();
 - 回答要灵活
 - 要学会赞美
 
-## :pencil:渲染机制
+### :pencil:渲染机制
 
-#### :memo:什么是DOCTYPE及作用
+###### :memo:什么是DOCTYPE及作用
 
 >DTD(document type definition ，文档类型定义) 是一系列的语法规则，用来定义XML或者HTML的文件类型。浏览器会使用它来判断文档类型，决定使用何种协议来解析以及切换浏览器。
 
@@ -653,11 +653,11 @@ XHR.send();
   - HTML 4.01 Strict
   - HTML 4.01 Transitional
 
-#### :memo:浏览器渲染过程
+###### :memo:浏览器渲染过程
 
 ![alt](../configExampleImgs/DOMRender.png)
 
-#### :memo:重排Reflow
+###### :memo:重排Reflow
 
 - 定义：DOM结构中的各个元素都有自己的盒子(模型)，这些都需要浏览器根据各种样式来计算并根据计算结果将元素放到它该出现的位置，这个过程称为reflow。
 
@@ -669,7 +669,7 @@ XHR.send();
   - 当Resize窗口的时候（移动端设备不存在此类问题），或者滚动的时候
   - 当修改网页的默认字体的时候
 
-#### :memo:重绘Repaint
+###### :memo:重绘Repaint
 
 - 定义：当各种盒子的位置、大小以及其它属性，例如颜色、字体大小等都确定下来后，浏览器于是便把这些元素都按照各自的特性绘制一遍，于是页面的内容出现了，这个过程称为repaint。
 
@@ -677,11 +677,11 @@ XHR.send();
   - DOM改动
   - CSS改动
 
-#### :memo:布局Layout
+###### :memo:布局Layout
 
-## :pencil:JS运行机制
+### :pencil:JS运行机制
 
-#### :memo:Demo引出
+###### :memo:Demo引出
 
 ```javascript
 console.log(1);
@@ -740,13 +740,13 @@ for(var i = 0;i<4;i++) {
 - 异步任务的放入时间和执行时间
 - 当时间到了之后，会把setTimeout扔进异步队列中
 
-#### :memo:异步任务
+###### :memo:异步任务
 
 - setTimeout和setInterval
 - DOM事件
 - ES6中的Promise
 
-#### :memo:总结
+###### :memo:总结
 
 - 理解JS的单线程的概念
 - 理解任务队列
@@ -754,9 +754,9 @@ for(var i = 0;i<4;i++) {
 - 理解哪些语句会放入异步任务队列
 - 理解语句放入异步任务队列的时机
 
-## :pencil:页面性能
+### :pencil:页面性能
 
-#### :memo:提升页面性能的方法有哪些？
+###### :memo:提升页面性能的方法有哪些？
 
 - 资源压缩合并，减少Http请求
 - 非核心代码异步加载`——>`异步加载的方式`——>`异步加载的区别
@@ -792,14 +792,14 @@ for(var i = 0;i<4;i++) {
 <link rel = "dns-prefetch" href = "//host_name_to_prefetch.com">
 ```
 
-## :pencil:错误监控
+### :pencil:错误监控
 
-#### :memo:前端错误的分类
+###### :memo:前端错误的分类
 
 - 即时运行错误：代码错误
 - 资源加载错误
 
-#### :memo:错误的捕获方式
+###### :memo:错误的捕获方式
 
 - 即时运行错误
 ```bash
@@ -833,7 +833,7 @@ Resource interpreted as script but transferred
   - 在script标签中增加crossorigin属性
   - 设置js资源响应头Access-Control-Allow-Origin:*
 
-#### :memo:上报错误的基本原理
+###### :memo:上报错误的基本原理
 
 - 采用Ajax通信的方式上报
 - 利用Image对象上报
