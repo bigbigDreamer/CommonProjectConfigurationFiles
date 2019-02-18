@@ -116,7 +116,7 @@ npm install -g eslint-plugin-sort-class-members
 
 npm install -g babel-eslint
 
-npm install -g eslint-plugin-babel
+npm install -g eslint-plugin-babel 
 ```
 - 第二步：在项目根目录创建配置文件
 
@@ -132,18 +132,18 @@ npm install -g eslint-plugin-babel
 为
 ## :revolving_hearts:less在WebStorm中如何配置
 
-- 第一步：安装
+- 第一步：安装 
 
 ```bash
 npm install -g less 
 ```
-- 第二步：附图
+- 第二步：附图 
 
 ![alt](configExampleImgs/less1.png)
 
 ![alt](configExampleImgs/less2.png)
 
-## :revolving_hearts:Hexo搭建个人博客
+## :revolving_hearts:Hexo搭建个人博客 
 
 - 参见[教程](https://ivu1314.club/9c29.html)
 - [Hexo官网](https://hexo.io/zh-cn/docs/helpers.html#%E7%BD%91%E5%9D%80)
@@ -169,10 +169,6 @@ npm install -g less
 
 - 参见[BillWang](https://github.com/bigbigDreamer/BillWang/blob/master/blogs&&tools/10%E4%B8%AA%E6%8F%92%E4%BB%B6%E7%8E%A9%E8%BD%ACchrome.md)
 
-## :revolving_hearts:前端程序员需要掌握的英语单词
-
-- 参见[笔记本](Note/IT前端常用词汇.docx)[在前辈总结的基础上，持续增加中......]
-- [MyNote](Note/VocabularyBook.md)[我的单词本，持续更新中......]
 
 ## :revolving_hearts:使用JSDoc自动生成代码文档
 
@@ -187,7 +183,13 @@ npm install -g jsdoc
 
 ```bash
 jsdoc demo.js
+
 ```
+
+## :revolving_hearts:前端程序员需要掌握的英语单词
+
+- 参见[笔记本](Note/IT前端常用词汇.docx)[在前辈总结的基础上，持续增加中......]
+- [MyNote](Note/VocabularyBook.md)[我的单词本，持续更新中......]
 
 ## :revolving_hearts:自撰的网站色彩指导[持续更新中......]
 
@@ -217,13 +219,14 @@ QQ:1826001146
 
 WeChat:17693104287
 
-MyBlog:https://ivu1314.club
+MyBlog: https://ivu1314.club
 
 ## :mega:赏我一杯咖啡吧~~~
 
-![alt](configExampleImgs/weixin.jpg)
+![alt](configExampleImgs/weixin.jpg) 
 
-# License
+# License [GPL3.0](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles/blob/master/LICENSE)
 
-[MIT](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles/blob/master/LICENSE)
+Copyright (c) 2019 Eric Wang     
+
 
