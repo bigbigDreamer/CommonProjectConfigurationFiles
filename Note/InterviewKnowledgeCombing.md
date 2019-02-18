@@ -772,3 +772,52 @@ for(var i = 0;i<4;i++) {
 
 ## :pencil:错误监控
 
+#### :memo:前端错误的分类
+
+- 即时运行错误：代码错误
+- 资源加载错误
+
+#### :memo:错误的捕获方式
+
+- 即时运行错误
+```bash
+#(1)try catch
+#(2)window.onerror
+
+```
+- 资源加载错误（不会冒泡）
+
+```bash
+#(1)object.onerror
+#(2)performance.getEntries()  [获取资源加载时长，返回一个数组]
+#(3)Error事件捕获
+```javascript
+ window.addEventListener('error',function(e){
+  console.log('捕获'+e)
+ },true)
+```
+```
+
+- 延伸：跨域的js运行错误可以捕获吗，错误提示是什么，应该怎么处理？
+```bash
+Resource interpreted as script but transferred
+错误信息：Script error
+出错行号：0
+出错列号：0
+错误详情：null
+
+```
+
+  - 在script标签中增加crossorigin属性
+  - 设置js资源响应头Access-Control-Allow-Origin:*
+
+#### :memo:上报错误的基本原理
+
+- 采用Ajax通信的方式上报
+- 利用Image对象上报
+
+```javascript
+
+(new Image()).src = 'http://www.baidu.com'
+````
+
