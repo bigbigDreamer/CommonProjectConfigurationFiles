@@ -219,6 +219,10 @@ WeChat:17693104287
 
 MyBlog:https://ivu1314.club
 
+## :mega:赏我一杯咖啡吧~~~
+
+![alt](configExampleImgs/wexin.jpg)
+
 # License
 
 [MIT](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles/blob/master/LICENSE)
