@@ -197,7 +197,7 @@ jsdoc demo.js
 
 ## :revolving_hearts:自撰前端面经[持续更新中......]
 
-- 参见[白皮书](Note/InterviewKnowledgeCombing.md)
+- 参见[白皮书](Note/InterviewKnowledgeNote.md)
 -----------------------------------------------------------------------------
 
 # :books:好书推荐
