@@ -344,6 +344,17 @@ const obj1 = Object.create(obj);
 
 ![alt](../configExampleImgs/prototype.png)
 
+- 其实，理解原型链只需要看懂下面代码就可以了。
+```javascript
+
+  Function.prototype = {
+        constructor : Function,
+        __proto__ : parent prototype,
+        some prototype properties: ...
+    };
+
+```
+
 
 ###### :memo:instanceof的原理
 
