@@ -156,7 +156,7 @@
 
 ***BFC子元素即使是float也会参与父元素的高度计算***
 
-### :pencil:DOM事件
+### DOM事件
 
 ###### :memo:DOM事件的级别
 
@@ -706,7 +706,7 @@ XHR.send();
 
 ###### :memo:布局Layout
 
-### :pencil:JS运行机制
+### JS运行机制
 
 ###### :memo:Demo引出
 
