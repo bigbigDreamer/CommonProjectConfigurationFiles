@@ -353,6 +353,21 @@ const obj1 = Object.create(obj);
         some prototype properties: ...
     };
 
+/**
+* @time  2019/2/20 11:11
+* @author  Bill Wang <vuejs@vip.qq.com>
+* @desc   函数的原型对象constructor默认指向函数本身，
+*         原型对象除了有原型属性外，为了实现继承，还
+*         有一个原型链指针__proto__，该指针指向上一
+*         层的原型对象，而上一层的原型对象的结构依然
+*         类似，这样利用__proto__一直指向Object的原
+*         型对象上，而Object的原型对象
+*         用Object.prototype.__proto__ = null表示原
+*         型链的最顶端，如此变形成了javascript的原型链
+*         继承，同时也解释了为什么所有的javascript对象
+*         都具有Object的基本方法。
+*/
+
 ```
 
 
