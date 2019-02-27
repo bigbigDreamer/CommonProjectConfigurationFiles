@@ -206,6 +206,9 @@ jsdoc demo.js
 
 ## :closed_book:[精通CSS](EBook/[W3Cfuns]精通CSS：高级Web标准解决方案(第2版).pdf)
 
+## :closed_book:[你不知道的JavaScript（上卷)](EBook/你不知道的JavaScript（上卷\).pdf)
+## :closed_book:[你不知道的JavaScript（下卷)](EBook/你不知道的JavaScript（下卷\).pdf)
+
 
 
 -----------------------------------------------------------------------------------------
