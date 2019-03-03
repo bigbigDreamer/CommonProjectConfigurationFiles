@@ -10,7 +10,7 @@
 - [:pencil: BFC](#bfc)
 - [:pencil: DOM事件](#dom事件)
 - [:pencil: HTTP协议](#http协议)
-- [:pencil: 原型链](#原型链)
+- [:pencil: 原型链](#原型链)-
 - [:pencil: 面向对象](#面向对象)
 - [:pencil: 通信类](#通信类)
 - [:pencil: 安全类](#安全类)

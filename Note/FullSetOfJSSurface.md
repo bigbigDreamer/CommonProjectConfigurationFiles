@@ -109,6 +109,56 @@
     }
   ```
   - 逻辑运算符
+  
+### 作用域、闭包
+  
+  - 请尝试陈述一下你对变量提升的理解。
+  - 说明this的几种不同使用场景。
+  - 如何理解作用域？
+  - 实际开发中闭包的作用。
 
+------
 
+>执行上下文
 
+- 范围：一段<script>或者一个函数
+- 全局：变量定义、函数声明  `一段<script>`
+- 函数：变量定义、函数声明、this、arguments `函数`
+
+>this
+
+>作用域
+
+>作用域链
+
+>闭包
+
+### JS-web-api
+
+#### Ajax
+
+- 手写ajax
+
+```javascript
+const XHR = new XMLHttpRequest();
+
+XHR.open('method','url',true,{
+    
+});
+//XHR.send(null);
+XHR.onreadystatechange = function() {
+  if (XHR.readyState === 4) {
+      if (XHR.status === 200) {
+          console.log(XHR.statusText);
+      }
+  }
+}
+//状态码说明
+
+```
+- 状态码说明
+  - 0 （未初始化）还没有调用哪个send()方法
+  - 1 （载入）已调用send()方法，正在发送请求
+  - 2 （载入完成）send()方法执行完成，已经接受到全部响应内容
+  - 3 （交互）正在解析响应内容
+  - 4 （完成）响应内容那个解析完成，可以再客户端调用了
