@@ -45,7 +45,7 @@
 
 - 第二步：附图。
 
-![alt](configExampleImgs/editorconfig.png)
+![alt](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles/blob/master/configExampleImgs/editorconfig.png?raw=true)
 
 - 第三步：单击export就会自动覆盖当前项目目录下的配置文件。
 
@@ -89,9 +89,9 @@ npm install --save @babel/polyfill
 
 - 第四步：附图。
 
-![alt](configExampleImgs/babel1.png)
+![alt](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles/blob/master/configExampleImgs/babel1.png?raw=true)
 
-![alt](configExampleImgs/babel2.png)
+![alt](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles/blob/master/configExampleImgs/babel2.png?raw=true)
 
 ## :bookmark:`.eslintrc.js`
 
@@ -122,9 +122,17 @@ npm install -g eslint-plugin-babel
 
 - 第三步：附图。
 
-![alt](configExampleImgs/eslint1.png)
+![alt](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles/blob/master/configExampleImgs/eslint1.png?raw=true)
 
-![alt](configExampleImgs/eslint2.png)
+![alt](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles/blob/master/configExampleImgs/eslint2.png?raw=true)
+
+## :bookmark:`webpack.config.js`
+
+>`webpack.config.js`是配合webpack打包工具使用的配置文件。
+
+##### Directions for use
+
+>参见[webpack热启动/热更新配置详解](Demo/webpack-demo)
 
 -----------------------------------------------------------------------
 
@@ -139,9 +147,9 @@ npm install -g less
 ```
 - 第二步：附图 
 
-![alt](configExampleImgs/less1.png)
+![alt](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles/blob/master/configExampleImgs/less1.png?raw=true)
 
-![alt](configExampleImgs/less2.png)
+![alt](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles/blob/master/configExampleImgs/less2.png?raw=true)
 
 ## :revolving_hearts:Hexo搭建个人博客 
 
@@ -188,7 +196,7 @@ jsdoc demo.js
 
 ## :revolving_hearts:前端程序员需要掌握的英语单词
 
-- 参见[笔记本](Note/IT前端常用词汇.docx)[在前辈总结的基础上，持续增加中......]
+- 参见[笔记本](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles/blob/master/Note/IT%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E8%AF%8D%E6%B1%87.docx)[在前辈总结的基础上，持续增加中......]
 - [MyNote](Note/VocabularyBook.md)[我的单词本，持续更新中......]
 
 ## :revolving_hearts:自撰的网站色彩指导[持续更新中......]
@@ -207,15 +215,15 @@ jsdoc demo.js
 
 # :books:好书推荐
 
-## :closed_book:[CSS揭秘](EBook/CSS揭秘.pdf)
+## :closed_book:[CSS揭秘](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles/blob/master/EBook/CSS%E6%8F%AD%E7%A7%98.pdf)
 
-## :closed_book:[精通CSS](EBook/[W3Cfuns]精通CSS：高级Web标准解决方案(第2版).pdf)
+## :closed_book:[精通CSS](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles/blob/master/EBook/%5BW3Cfuns%5D%E7%B2%BE%E9%80%9ACSS%EF%BC%9A%E9%AB%98%E7%BA%A7Web%E6%A0%87%E5%87%86%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88(%E7%AC%AC2%E7%89%88).pdf)
 
-## :closed_book:[你不知道的JavaScript（上卷)](EBook/你不知道的JavaScript（上卷\).pdf)
+## :closed_book:[你不知道的JavaScript（上卷)](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles/blob/master/EBook/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8A%E5%8D%B7).pdf)
 
-## :closed_book:[你不知道的JavaScript（中卷)](EBook/你不知道的JavaScript（中卷\).pdf)
+## :closed_book:[你不知道的JavaScript（中卷)](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles/blob/master/EBook/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%AD%E5%8D%B7).pdf)
 
-## :closed_book:[你不知道的JavaScript（下卷)](EBook/你不知道的JavaScript（下卷\).pdf)
+## :closed_book:[你不知道的JavaScript（下卷)](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles/blob/master/EBook/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8B%E5%8D%B7).pdf)
 
 
 
