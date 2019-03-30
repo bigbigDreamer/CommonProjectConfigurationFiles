@@ -3,7 +3,7 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles)
 [![](https://img.shields.io/badge/npm-v>6.6-green.svg)](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles)
 [![](https://img.shields.io/badge/LICENSE-GPL3.0-green.svg)](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles/blob/master/LICENSE)
-[![HitCount(http://hits.dwyl.io/bigbigdreamer/CommonProjectConfigurationFiles.svg)](http://hits.dwyl.io/bigbigdreamer/CommonProjectConfigurationFiles)]()
+[![HitCount](http://hits.dwyl.io/bigbigDreamer/CommonProjectConfigurationFiles.svg)](http://hits.dwyl.io/bigbigDreamer/CommonProjectConfigurationFiles)
 # :page_with_curl:Introduce
 
 ## :page_with_curl:Self-introduction
