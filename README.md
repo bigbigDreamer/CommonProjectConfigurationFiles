@@ -186,7 +186,7 @@ npm install -g less
 npm install -g jsdoc
 ```
 
-- 第三步：生成注释文档
+- 第三步：生成注释文档  
 
 ```bash
 jsdoc demo.js
@@ -210,6 +210,7 @@ jsdoc demo.js
 
 - 参见[白皮书](Note/FullSetOfJSSurface.md)
 
+
 -----------------------------------------------------------------------------
 
 # :books:好书推荐
@@ -227,6 +228,14 @@ jsdoc demo.js
 ## :closed_book:[Node.js葵花宝典（自撰）](./EBook/Node.md)
 
 -----------------------------------------------------------------------------------------
+
+# SelfImprovement
+
+[Vue进阶](./VueAdvanced)
+
+
+-----------
+
 # Statement
 
 ## :mega:Contact Me
