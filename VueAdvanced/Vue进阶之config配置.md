@@ -64,7 +64,7 @@ module.exports = {
               target: 'http://1278.0.0.1:8080/',
               changeOrigin: true,
               pathRewrite: {
-                '^/deviceCategory': '/deviceCategory'
+                '^/d/eviceCategory': '/deviceCategory'
               }
             },
      '/device': {
@@ -101,6 +101,7 @@ module.exports = {
                         threshold: 10240,//对超过10k的数据压缩
                         deleteOriginalAssets: false //不删除源文件
                     }),
+                    //删除console
                     new UglifyJsPlugin({
                         uglifyOptions: {
                             compress: {
