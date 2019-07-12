@@ -136,7 +136,7 @@ npm install -g eslint-plugin-babel
 -----------------------------------------------------------------------
 
 # :muscle:IDE软技能
-为
+
 ## :revolving_hearts:less在WebStorm中如何配置
 
 - 第一步：安装 
@@ -229,9 +229,9 @@ jsdoc demo.js
 
 -----------------------------------------------------------------------------------------
 
-# SelfImprovement
+# :kissing_heart:SelfImprovement
 
-[Vue进阶](./VueAdvanced)
+:closed_book:[Vue进阶](./VueAdvanced)
 
 
 -----------
