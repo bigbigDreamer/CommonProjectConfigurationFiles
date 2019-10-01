@@ -253,6 +253,7 @@ MyBlog: https://bigdreamer.cc
 <p>温馨提示：左侧微信，右侧支付宝！</p>
 
 <img src="./configExampleImgs/wechat.jpg" width="80px" height="80px">
+
 <img src="./configExampleImgs/alipay.jpg" width="80px" height="80px">
 
 
