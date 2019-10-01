@@ -251,7 +251,17 @@ MyBlog: https://bigdreamer.cc
 
 ## :mega:赏我一杯咖啡吧~~~
 
-![alt](configExampleImgs/weixin.jpg) 
+<figure>
+<img src="./configExampleImgs/wechat.jpg" width="100" height="100">
+ <figcaption>微信</figcaption>
+</figure>
+
+<figure>
+<img src="./configExampleImgs/alipay.jpg" width="100" height="100">
+ <figcaption>支付宝</figcaption>
+</figure>
+
+
 
 # License [GPL3.0](https://github.com/bigbigDreamer/CommonProjectConfigurationFiles/blob/master/LICENSE)
 
