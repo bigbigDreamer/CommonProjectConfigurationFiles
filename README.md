@@ -250,16 +250,10 @@ WeChat:17693104287
 MyBlog: https://bigdreamer.cc
 
 ## :mega:赏我一杯咖啡吧~~~
+<p>温馨提示：左侧微信，右侧支付宝！</p>
 
-<figure>
 <img src="./configExampleImgs/wechat.jpg" width="100" height="100">
- <figcaption>微信</figcaption>
-</figure>
-
-<figure>
 <img src="./configExampleImgs/alipay.jpg" width="100" height="100">
- <figcaption>支付宝</figcaption>
-</figure>
 
 
 
