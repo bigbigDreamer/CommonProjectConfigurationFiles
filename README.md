@@ -252,9 +252,12 @@ MyBlog: https://bigdreamer.cc
 ## :mega:赏我一杯咖啡吧~~~
 <p>温馨提示：左侧微信，右侧支付宝！</p>
 
-<img src="./configExampleImgs/wechat.jpg" width="80px" height="80px">
+<p>
+<img src="./configExampleImgs/wechat.jpg" width="150" height="150">
+&emsp;
+<img src="./configExampleImgs/alipay.jpg" width="150" height="150">
 
-<img src="./configExampleImgs/alipay.jpg" width="80px" height="80px">
+</p>
 
 
 
