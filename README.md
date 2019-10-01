@@ -247,7 +247,7 @@ QQ:1826001146
 
 WeChat:17693104287
 
-MyBlog: https://ivu1314.club
+MyBlog: https://bigdreamer.cc
 
 ## :mega:赏我一杯咖啡吧~~~
 
