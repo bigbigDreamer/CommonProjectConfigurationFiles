@@ -14,4 +14,6 @@
 - [2.react与react-dom](./2ReactAndReactDom.md)
 - [3.JSX](./3JSX.md)
 - [4.组件内部状态](./4State.md)
+- [5.Props](./5Props.md)
+- [6.数据循环与条件渲染](./6DataLoopAndIfRender.md)
 
