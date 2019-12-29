@@ -235,6 +235,8 @@ jsdoc demo.js
 
 ## :closed_book:[React学习手札](./ReactLearn)
 
+## :closed_book:[React学习手札](./DesignPattern)
+
 -----------
 
 # Statement
